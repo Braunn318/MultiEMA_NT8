@@ -33,4 +33,5 @@ Názvy čar v Plots (např. „EMA 4 (200)") ukazují výchozí periodu. Po změ
 
 ## Historie
 
+- **1.0.1** (2026-11-02) – oprava kompilace v NT8.
 - **1.0.0** (2026-11-02) – první verze.

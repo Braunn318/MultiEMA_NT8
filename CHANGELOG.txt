@@ -1,3 +1,6 @@
+## 1.0.1 - 2026-11-02
+- Opraveno: kompilace v NT8 hlásila chyby CS0229 / CS0234 (NT8 vygeneroval kód se špatným umístěním třídy). Výčet vstupů je teď mimo prostor jmen indikátoru.
+
 ## 1.0.0 - 2026-11-02
 - První verze: 7 EMA v jednom indikátoru (výchozí EMA50 Low, EMA50 High, EMA 20/200/300/600/1200 Close).
 - U každé EMA jde nastavit perioda, vstup (Open/High/Low/Close/Median/Typical) a zapnutí; barva, tloušťka a styl čáry v okně Indicators → Plots.

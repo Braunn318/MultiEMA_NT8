@@ -4,6 +4,7 @@
 // - Barva, tloušťka, styl čáry: skupina „Plots" v okně Indicators (standardní NT8 plot).
 // - Výpočet = vestavěný NT8 EMA(vstup, perioda).
 //
+// 1.0.1 (2026-11-02): oprava kompilace v NT8 (výčet vstupů mimo namespace).
 // 1.0.0 (2026-11-02): první verze.
 //
 // Zdroják: F:\Trading\DEV\MultiEMA Indicator\MultiEMA.cs (github.com/Braunn318/MultiEMA_NT8)
@@ -18,20 +19,18 @@ using System.Xml.Serialization;
 using NinjaTrader.Gui;
 using NinjaTrader.Gui.Chart;
 using NinjaTrader.Data;
-using NinjaTrader.NinjaScript.Indicators.Braunn.MultiEMATypes;
 #endregion
 
-namespace NinjaTrader.NinjaScript.Indicators.Braunn.MultiEMATypes
+// Výčet je v globálním prostoru jmen (jako u M2Zones): NT8 generuje kód podle prvního
+// prostoru jmen v souboru – jiný před .Braunn by vygeneroval chybné odkazy.
+public enum MultiEMASource
 {
-	public enum MultiEMASource
-	{
-		Open,
-		High,
-		Low,
-		Close,
-		Median,
-		Typical
-	}
+	Open,
+	High,
+	Low,
+	Close,
+	Median,
+	Typical
 }
 
 // Namespace .Braunn = složka „Braunn" v seznamu indikátorů NT8 (stejně jako M2Zones). Neměnit.
