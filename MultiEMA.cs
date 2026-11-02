@@ -4,7 +4,7 @@
 // - Barva, tloušťka, styl čáry: skupina „Plots" v okně Indicators (standardní NT8 plot).
 // - Výpočet = vestavěný NT8 EMA(vstup, perioda).
 //
-// 1.0.1 (2026-11-02): oprava kompilace v NT8 (výčet vstupů mimo namespace).
+// 1.0.1 (2026-11-02): oprava kompilace v NT8 (výčet vstupů v globálním prostoru jmen).
 // 1.0.0 (2026-11-02): první verze.
 //
 // Zdroják: F:\Trading\DEV\MultiEMA Indicator\MultiEMA.cs (github.com/Braunn318/MultiEMA_NT8)
